@@ -12,6 +12,9 @@ export class QuoteComponent implements OnInit {
       new Quote('Elon Musk', 'When something is important enough, you do it even if the odds are not in your favor.', 'Vivian' ,new Date()),
       new Quote('Elon Musk', "Patience is a virtue, and I'm learning patience.It's a tough lesson.", 'Vivian', new Date())
   ];
+  toggleDetails(index:number){
+    this.quotes[index].showDetails = !this.quotes[index].showDetails;
+  }
 
   constructor() { }
 
