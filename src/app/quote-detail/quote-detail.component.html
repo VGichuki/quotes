@@ -1,8 +1,7 @@
 <div>
     <div class="row">
         <h2 class="card title">Author: {{quote.author}}</h2>
-        <p>upVote:{{quote.upVote}}</p>
-        <p>downVote;{{quote.downVote}}</p>
-
+        <p> <i (click)='upVote()' class="fa fa-thumbs-up"></i>:{{quote.upVote}}</p>
+        <p><i (click)='downVote()' class="fa fa-thumbs-down"></i>:{{quote.downVote}}</p>
     </div>
 </div>
