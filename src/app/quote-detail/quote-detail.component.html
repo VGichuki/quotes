@@ -4,7 +4,7 @@
         <p> <i (click)='upVote()' class="fa fa-thumbs-up"></i>:{{quote.upVote}}</p>
         <p><i (click)='downVote()' class="fa fa-thumbs-down"></i>:{{quote.downVote}}</p>
         <p>{{quote.quote}}</p>
-<p>This quote will be complete in {{quote.completeDate|dateCount}} days</p>
+<p>This quote was written {{quote.completeDate|dateCount}} days ago</p>
 <button class="btn"(click)= 'quoteDelete(true)'>Delete Quote</button>
     </div>
 </div>
